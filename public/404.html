@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>404</title>
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // https://github.com/rafgraph/spa-github-pages
+      // MIT License
+      (function() {
+        var l = window.location;
+        var segmentCount = 1; // repo name segment count for project pages
+        var path = l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?/' +
+          l.pathname.split('/').slice(1 + segmentCount).join('/');
+        var search = l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '';
+        l.replace(l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + path + search + l.hash);
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
